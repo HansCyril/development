@@ -28,13 +28,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 CORS_ALLOW_ALL_ORIGINS = True
-"http://127.0.0.1:8100",
+"http://127.0.0.1:8026",
 "http://localhost:3000",
 "http://127.0.0.1:5500",
-"http://127.0.0.1:3342",
-"http://172.17.100.14:3342",
-"http://172.17.100.14:8100",
-"http://0.0.0.0:8100",
+"http://127.0.0.1:3332",
+"http://172.17.100.14:3332",
+"http://172.17.100.14:8026",
+"http://0.0.0.0:8026",
 CORS_ALLOW_METHODS = ['DELETE', 'GET', 'PATCH', 'POST', 'PUT']
 # Application definition
 
@@ -98,8 +98,8 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # Use MySQL engine
-        'NAME': 'default_db1',                 # Your database name
-        'USER': 'default',                     # Your MySQL username
+        'NAME': 'eder3_db1',                 # Your database name
+        'USER': 'eder3',                     # Your MySQL username
         'PASSWORD': '123456',                  # Your MySQL password
         'HOST': 'localhost',                   # MySQL server host (localhost if on the same machine)
         'PORT': '3306',                        # MySQL default port
@@ -146,7 +146,7 @@ STATIC_URL = 'static/'
 
 # Media settings
 
-MEDIA_URL = '/default/media/'
+MEDIA_URL = '/eder3/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
